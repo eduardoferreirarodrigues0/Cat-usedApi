@@ -1,14 +1,24 @@
-#gatinhos {
+.container {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-img {
-    display: block;
-    width: auto;
-    height: 250px;
+#gatinhos, #marcas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#gatinhos img, #marcas img {
+    width: 100px;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#gatinhos img:hover, #marcas img:hover {
+    transform: scale(1.1);
 }
